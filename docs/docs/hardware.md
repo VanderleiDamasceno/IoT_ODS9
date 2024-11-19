@@ -1,3 +1,3 @@
 Descrição dos componentes (ESP32, sensores, válvula).
 Especificações técnicas.
-Esquema de montagem (inserindo links para imagens no diretório media/).
+Esquema de montagem (inserir links para imagens no diretório media/).
