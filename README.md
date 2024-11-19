@@ -1,16 +1,8 @@
 # Iot_ODS9
-Solução IoT para monitoramento e otimização de processos em vinícolas alinhada à ODS 9
-
-Objetivo:
-"Este projeto visa automatizar e monitorar processos de vinificação utilizando IoT, alinhado à ODS 9."
-
-Tecnologias: ESP32, protocolo MQTT, sensores de umidade, válvula solenóide.
-Como Reproduzir:
-Clone o repositório:
-bash
-   
-git clone <URL_DO_REPOSITORIO>
-
-Monte o hardware conforme docs/hardware.md.
-Carregue o código em src/ no ESP32 usando a Arduino IDE.
-Configure o Broker MQTT usando configs/mosquitto_config.txt.
+Objetivo do Sistema:
+"Automação da irrigação em vinícolas utilizando sensores e atuadores conectados à Internet via MQTT."
+Instruções de Configuração:
+Clone o repositório: git clone https://github.com/seuusuario/IoT_Vinicola_ODS9.git
+Configure o ESP32 conforme o esquema no diretório docs/.
+Carregue o código em src/ utilizando o Arduino IDE.
+Instale e configure o Broker MQTT seguindo o guia em configs/.
