@@ -1,1 +1,6 @@
-
+Configuração do Broker MQTT:
+plaintext
+Copiar código
+listener 1883
+allow_anonymous true
+#CONFIRMAR DADOS
