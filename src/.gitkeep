@@ -1,1 +1,12 @@
+Código .ino usado para configurar o ESP32, com comentários explicativos.
 
+
+Certifique-se de que o código contenha:
+Configuração de Wi-Fi:
+cpp
+const char* ssid = "Rede";
+const char* password = "Senha";
+
+Publicação MQTT:
+cpp
+client.publish("vinicola/sensor/umidade_solo", "valor");
