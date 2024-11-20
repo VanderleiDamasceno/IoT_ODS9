@@ -53,41 +53,42 @@ O **Mosquitto** é um broker MQTT popular para gerenciamento de mensagens. Ele p
 
 Execute os seguintes comandos no terminal para instalar o Mosquitto:
 
-bash
-sudo apt-get update
-sudo apt-get install mosquitto mosquitto-clients
+-bash
+  -sudo apt-get update
+  -sudo apt-get install mosquitto mosquitto-clients
 
 ### Configuração do Mosquitto:
 O arquivo de configuração do Mosquitto está localizado em /etc/mosquitto/mosquitto.conf. Um exemplo de configuração básica seria:
 
-conf
+-conf
 
-listener 1883
-allow_anonymous true
-persistence true
+  -listener 1883
+  -allow_anonymous true
+  -persistence true
+  
 Após configurar o Mosquitto, você pode iniciar o serviço com:
 
-bash
+-bash
 
-sudo systemctl start mosquitto
+  -sudo systemctl start mosquitto
 
 ### Testando o Broker MQTT:
 
-Para **publicar** uma mensagem:
+-Para **publicar** uma mensagem:
 
-bash
+  -bash
 
-mosquitto_pub -h localhost -t "vinicola/umidade/solo" -m '{"sensor_id": "1", "umidade": 45.5}'
+  -mosquitto_pub -h localhost -t "vinicola/umidade/solo" -m '{"sensor_id": "1", "umidade": 45.5}'
 
-Para **assinar** um tópico:
+-Para **assinar** um tópico:
 
-bash
+  -bash
 
-mosquitto_sub -h localhost -t "vinicola/umidade/solo"
+  -mosquitto_sub -h localhost -t "vinicola/umidade/solo"
 
-Esses comandos permitem verificar se a comunicação está funcionando corretamente entre o publisher e o subscriber.
+  -Esses comandos permitem verificar se a comunicação está funcionando corretamente entre o publisher e o subscriber.
 
-##4.Aplicação de Monitoramento com Streamlit
+## 5.Aplicação de Monitoramento com Streamlit
 
 Para visualizar os dados de umidade e irrigação em tempo real, podemos usar Streamlit. O código abaixo exemplifica como configurar uma interface gráfica com Streamlit que se inscreve nos tópicos MQTT e exibe um gráfico em tempo real.
 
@@ -198,7 +199,7 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 
-## 5. Exemplo de Configuração do Publisher MQTT com Streamlit
+## 6. Exemplo de Configuração do Publisher MQTT com Streamlit
 
 Em um projeto de automação, você pode criar um publisher MQTT para controlar ações, como iniciar ou parar a irrigação. O exemplo abaixo demonstra um publisher simples que envia comandos para o broker MQTT.
 
