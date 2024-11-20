@@ -65,7 +65,8 @@ A alimentação do ESP32 é realizada via barramento da protoboard, enquanto a v
 
 Esquema do Circuito
 
-![Esquema dos circuitos](media/media/Esquema_dos_circuitos.jpg)
+![Esquema dos circuitos](../media/media/Esquema_dos_circuitos.jpg)
+
 
 
 
