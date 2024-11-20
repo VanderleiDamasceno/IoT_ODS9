@@ -40,7 +40,7 @@ Modelo analógico, utilizado para monitorar a umidade do solo.
 Utilizada para controlar o fluxo de água no sistema de irrigação.
 
 
--Especificações Técnicas:
+- Especificações Técnicas:
 
   - Tensão de operação: 12V.
 
