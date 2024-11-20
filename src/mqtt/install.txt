@@ -1,0 +1,14 @@
+# to install:
+pip install gmqtt
+sudo apt update
+sudo apt install mosquitto mosquitto-clients
+sudo systemctl start mosquitto
+sudo systemctl status mosquitto
+
+
+# add this lines at the end of file "/etc/mosquitto/mosquitto.conf"
+bind_address 0.0.0.0
+allow_anonymous true
+
+# then, run:
+sudo systemctl restart mosquitto
