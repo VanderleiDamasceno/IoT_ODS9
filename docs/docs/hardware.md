@@ -65,7 +65,7 @@ A alimentação do ESP32 é realizada via barramento da protoboard, enquanto a v
 
 **<h2>Esquema do Circuito</h2>**
 
-<img src="../media/Esquema_dos_circuitos.jpg" alt="Esquema dos circuitos" />
+<img src="[../media/Esquema_dos_circuitos.jpg](https://github.com/VanderleiDamasceno/IoT_ODS9/blob/main/media/media/Esquema_dos_circuitos.jpg?raw=true)" alt="Esquema dos circuitos" />
 
 
 
