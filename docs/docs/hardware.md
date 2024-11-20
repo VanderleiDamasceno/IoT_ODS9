@@ -1,6 +1,6 @@
 Descrição dos Componentes
 
-<h1>**_ESP32_**</h1>
+**_<h1>ESP32</h1>_**
 
 Conectividade Wi-Fi embutida, ideal para aplicações IoT.
 
@@ -10,7 +10,7 @@ Interface flexível para conectar sensores e atuadores diversos.
 
 
 
-<h1>**_Protoboard_**</h1>
+**_<h1>Protoboard</h1>_**
 
 Modelo com 420 pinos.
 
@@ -20,7 +20,7 @@ Barras laterais utilizadas para distribuir alimentação (VCC e GND).
 
 
 
-<h1>**_Sensor de Umidade_**</h1>
+**_<h1>Sensor de Umidade</h1>_**
 
 Modelo analógico, utilizado para monitorar a umidade do solo.
 
@@ -35,7 +35,7 @@ Conexão: 3 pinos - VCC, GND, e A0 (sinal analógico).
 
 
 
-<h1>**_Atuador (Válvula Solenóide)_**</h1>
+**_<h1>Atuador (Válvula Solenóide)</h1>_**
 
 Utilizada para controlar o fluxo de água no sistema de irrigação.
 
@@ -50,7 +50,7 @@ Pressão de operação: 0.02 - 0.8 MPa.
 
 
 
-<h1>**_Método de Implementação:_**</h1>
+**_<h1>Método de Implementação:</h1>_**
 
 Controlada por um relé, acionado pelo ESP32 com base nas leituras do sensor de umidade.
 
