@@ -30,8 +30,7 @@ No contexto do monitoramento de uma vinícola, os sensores de umidade do solo, t
 As mensagens MQTT para o monitoramento e controle da vinícola podem ser enviadas em formato **JSON**. Aqui estão exemplos de mensagens:
 
 ### Exemplo 1: Dados de Umidade do Solo
-```
-json
+```json
 {
   "sensor_id": "1",
   "umidade": 45.5,
@@ -40,8 +39,7 @@ json
 ```
 
 ### Exemplo 2: Dados de Umidade do Solo
-```
-json
+```json
 {
   "irrigacao": "ON",
   "sendor_id": "1",
@@ -210,7 +208,7 @@ if __name__ == "__main__":
 Em um projeto de automação, você pode criar um publisher MQTT para controlar ações, como iniciar ou parar a irrigação. O exemplo abaixo demonstra um publisher simples que envia comandos para o broker MQTT.
 
 ### Código do Publisher MQTT:
-```
+```python
 import asyncio
 from gmqtt import Client as MQTTClient
 
