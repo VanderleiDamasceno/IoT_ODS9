@@ -1,5 +1,3 @@
-# IoT para Monitoramento e Otimização de Processos em Vinícola
-
 ## 1. O Protocolo MQTT
 
 O **MQTT** (Message Queuing Telemetry Transport) é um protocolo de mensagens leve, utilizado principalmente em sistemas de Internet das Coisas (IoT) para a troca de dados entre dispositivos. Ele segue o modelo de comunicação **publish/subscribe**, onde os dispositivos podem **publicar** mensagens em tópicos e **inscrever-se** em tópicos para receber essas mensagens.
