@@ -108,22 +108,22 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 from gmqtt import Client as MQTTClient
 
-# Armazenamento de dados para o gráfico
+- Armazenamento de dados para o gráfico
 data = {
     "time": [],
     "humidity": [],
     "is_watering": []
 }
 
-# Configuração do Streamlit
+- Configuração do Streamlit
 st.set_page_config(page_title="Real-Time Humidity Graph", layout="wide")
 st.title("Real-Time Humidity Graph")
 
-# Inicialização do gráfico
+- Inicialização do gráfico
 graph_placeholder = st.empty()
 data_df = pd.DataFrame(data)
 
-# Callback para lidar com mensagens recebidas
+- Callback para lidar com mensagens recebidas
 async def on_message(client, topic, payload, qos, properties):
     msg = payload.decode()
     print(f"Received message: {msg} on topic: {topic}")
@@ -131,7 +131,7 @@ async def on_message(client, topic, payload, qos, properties):
         handle_new_data(msg)
         update_graph()
 
-# Configuração do cliente MQTT
+- Configuração do cliente MQTT
 async def mqtt_main():
     client = MQTTClient("subscriber")
     client.on_message = on_message
@@ -139,11 +139,11 @@ async def mqtt_main():
     client.subscribe("graph/data")
     await asyncio.Future()  # Mantém o script rodando
 
-# Função para processar dados recebidos
+- Função para processar dados recebidos
 def handle_new_data(msg):
     time_str, humidity_str, is_watering = msg.split(",")
     
-    # Converter para formato de hora
+    - Converter para formato de hora
     try:
         time_obj = datetime.strptime(time_str, "%Y-%m-%d %H:%M:%S")
         formatted_time = time_obj.strftime("%H:%M:%S")
@@ -155,41 +155,41 @@ def handle_new_data(msg):
     data["humidity"].append(humidity)
     data["is_watering"].append(is_watering == "1")
 
-    # Limitar os dados a 150 pontos
+    - Limitar os dados a 150 pontos
     if len(data["time"]) > 150:
         data["time"].pop(0)
         data["humidity"].pop(0)
         data["is_watering"].pop(0)
 
-# Função para atualizar o gráfico
+- Função para atualizar o gráfico
 def update_graph():
     data_df = pd.DataFrame(data)
     fig, ax = plt.subplots(figsize=(12, 3))
 
-    # Desenhar as linhas com base no status de irrigação
+    - Desenhar as linhas com base no status de irrigação
     for i in range(1, len(data_df)):
         color = "blue" if data["is_watering"][i-1] and data["is_watering"][i] else "red"
         ax.plot(data_df["time"][i-1:i+1], data_df["humidity"][i-1:i+1], color=color, linewidth=1)
 
-    # Adicionar pontos individuais com cores diferentes
+    - Adicionar pontos individuais com cores diferentes
     colors = ["blue" if is_watering else "red" for is_watering in data["is_watering"]]
     ax.scatter(data_df["time"], data_df["humidity"], c=colors, marker="o", zorder=5)
 
-    # Configurações do gráfico
+    - Configurações do gráfico
     ax.set_xlabel("Time")
     ax.set_ylabel("Humidity")
     ax.set_title("Real-Time Humidity Data")
 
-    # Ajustar a exibição dos rótulos do eixo X
+    - Ajustar a exibição dos rótulos do eixo X
     num_labels = 6
     ax.set_xticks(data_df["time"][::max(1, len(data_df) // num_labels)])
     ax.tick_params(axis='x', rotation=45)
 
-    # Exibir o gráfico
+    - Exibir o gráfico
     graph_placeholder.pyplot(fig)
     plt.close(fig)
 
-# Função principal
+- Função principal
 async def main():
     asyncio.create_task(mqtt_main())  # Executar MQTT em segundo plano
     while True:
@@ -206,17 +206,17 @@ Em um projeto de automação, você pode criar um publisher MQTT para controlar 
 import asyncio
 from gmqtt import Client as MQTTClient
 
-# Função principal para o publisher
+- Função principal para o publisher
 async def main():
     client = MQTTClient("publisher")
 
-    # Conectar ao broker MQTT
+    - Conectar ao broker MQTT
     await client.connect("192.168.15.7", port=1883)
 
-    # Publicar uma mensagem de controle
+    - Publicar uma mensagem de controle
     client.publish("test/topic", "Hello from the Publisher!")
 
-    # Desconectar após a publicação
+    - Desconectar após a publicação
     await asyncio.sleep(1)  # Dar tempo para enviar a mensagem
     await client.disconnect()
 
