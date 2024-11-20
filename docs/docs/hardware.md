@@ -64,9 +64,7 @@ O sinal do módulo relé é ligado à porta 25 do ESP32. O sensor de umidade é 
 A alimentação do ESP32 é realizada via barramento da protoboard, enquanto a válvula solenóide utiliza o relé como intermediário para controlar o fluxo de energia.
 
 **<h2>Esquema do Circuito</h2>**
-
-<img src="[[../media/Esquema_dos_circuitos.jpg](https://github.com/VanderleiDamasceno/IoT_ODS9/blob/main/media/media/Esquema_dos_circuitos.jpg?raw=true)](https://github.com/VanderleiDamasceno/IoT_ODS9/blob/main/media/media/Esquema_dos_circuitos.jpg?raw=true)" alt="Esquema dos circuitos" />
-<img src="" alt="Esquema dos circuitos" />
+<img src="https://github.com/VanderleiDamasceno/IoT_ODS9/blob/main/media/media/Esquema_dos_circuitos.jpg?raw=true" alt="Esquema dos circuitos" />
 
 
 
