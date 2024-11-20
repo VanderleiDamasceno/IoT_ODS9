@@ -9,6 +9,7 @@ Configurado para implementar o protocolo MQTT, possibilitando comunicação remo
 Interface flexível para conectar sensores e atuadores diversos.
 
 
+
 **_Protoboard_**
 
 Modelo com 420 pinos.
@@ -16,6 +17,7 @@ Modelo com 420 pinos.
 Barras laterais utilizadas para distribuir alimentação (VCC e GND).
 
 Área central de prototipagem para conectar resistores, LEDs e interligação com o ESP32.
+
 
 
 **_Sensor de Umidade_**
@@ -32,6 +34,7 @@ Saída: Analógica, com valores que variam conforme o nível de umidade do solo.
 Conexão: 3 pinos - VCC, GND, e A0 (sinal analógico).
 
 
+
 **_Atuador (Válvula Solenóide)_**
 
 Utilizada para controlar o fluxo de água no sistema de irrigação.
@@ -44,6 +47,7 @@ Tensão de operação: 12V.
 Tipo: Normally Closed (NC).
 
 Pressão de operação: 0.02 - 0.8 MPa.
+
 
 
 **_Método de Implementação:_**
