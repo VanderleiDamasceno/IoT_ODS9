@@ -1,8 +1,8 @@
-Documentação do Software
+**_<h1>Documentação do Software</h1>_**
 1. Explicação do Código-Fonte
 O software desenvolvido foi implementado utilizando a plataforma ESP32 e a IDE Arduino, configurada para suportar as funcionalidades específicas do protocolo MQTT. A estrutura do código é composta pelos seguintes elementos principais:
 
-Bibliotecas Utilizadas:
+**<h2>Bibliotecas Utilizadas:</h2>**
 
 WiFi.h: Gerencia a conexão Wi-Fi do ESP32.
 PubSubClient.h: Implementa o protocolo MQTT, possibilitando a publicação e assinatura de tópicos.
