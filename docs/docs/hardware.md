@@ -55,7 +55,7 @@ Pressão de operação: 0.02 - 0.8 MPa.
 Controlada por um relé, acionado pelo ESP32 com base nas leituras do sensor de umidade.
 
 
-**Esquema de Montagem**
+**<h2>Esquema de Montagem</h2>**
 
 O circuito conecta um ESP32, um sensor de umidade, um relé e uma válvula solenóide em uma protoboard.
 
