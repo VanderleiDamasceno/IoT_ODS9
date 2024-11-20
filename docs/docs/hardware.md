@@ -25,13 +25,13 @@ Barras laterais utilizadas para distribuir alimentação (VCC e GND).
 Modelo analógico, utilizado para monitorar a umidade do solo.
 
 
-Especificações Técnicas:
+- Especificações Técnicas:
 
-Tensão de operação: 3.3V a 5V.
+  - Tensão de operação: 3.3V a 5V.
 
-Saída: Analógica, com valores que variam conforme o nível de umidade do solo.
+  - Saída: Analógica, com valores que variam conforme o nível de umidade do solo.
 
-Conexão: 3 pinos - VCC, GND, e A0 (sinal analógico).
+  - Conexão: 3 pinos - VCC, GND, e A0 (sinal analógico).
 
 
 
@@ -40,13 +40,13 @@ Conexão: 3 pinos - VCC, GND, e A0 (sinal analógico).
 Utilizada para controlar o fluxo de água no sistema de irrigação.
 
 
-Especificações Técnicas:
+-Especificações Técnicas:
 
-Tensão de operação: 12V.
+  - Tensão de operação: 12V.
 
-Tipo: Normally Closed (NC).
+  - Tipo: Normally Closed (NC).
 
-Pressão de operação: 0.02 - 0.8 MPa.
+  - Pressão de operação: 0.02 - 0.8 MPa.
 
 
 
