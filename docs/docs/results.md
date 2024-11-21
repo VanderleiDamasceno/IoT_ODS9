@@ -1,6 +1,6 @@
 # Link para o vídeo Youtube
 
-<a href="https://www.youtube.com/watch?v=p4NGQ0QfsMw" target="_blank">Video explicativo do funcionamento do projeto</a>
+<a href="https://www.youtube.com/watch?v=p4NGQ0QfsMw" target="_blank">Video explicativo do funcionamento do projeto</a> (Ctrl + Clique para abrir em uma nova guia)
 
 ### Graficos em tempo real do experimento- níveis de umidade X Tempo.
 
